@@ -69,4 +69,12 @@ int main() {
 	}
 
 	cout << "Average GPA: " << averageGPA << endl;
+
+	cout << "\nSize of ids: " << ids.size(); // ids size
+	cout << "\nCapacity of ids: " << ids.capacity(); // ids capacity
+	cout << "\nSize of names: " << names.size(); // names size
+	cout << "\nCapacity of names: " << names.capacity(); // names capacity
+	cout << "\nSize of gpas: " << gpas.size(); // gpas size
+	cout << "\nCapacity of gpas: " << gpas.capacity(); // gpas capacity
+	cout << endl;
 }
