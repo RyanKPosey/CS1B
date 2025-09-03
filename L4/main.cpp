@@ -12,33 +12,25 @@ void read2DIntArray(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	}
 }
 
-vector<int> get2DArrayRowSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
-	vector<int> rowSums = {};
+void print2DArrayRowSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	for(int i = 0; i < x1Size; i++) { // Rows
 		int rowSum = 0;
 		for (int i2 = 0; i2 < x2Size; i++) { // Get user input for each coordinate
 			rowSum += matrix[i][i2];
 		}
 		
-		rowSums.push_back(rowSum);
 		cout << "\nSum for row " << i+1 << " :" << rowSum;
 	}
-
-	return rowSums; // Return row sums instead of only printing them
 }
 
-vector<int> get2DArrayColumnSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
-	vector<int> columnSums = {};
+void print2DArrayColumnSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	for(int i = 0; i <= x2Size; i++) { // Columns
 		int columnSum = 0;
 		for (int i2 = 0; i2 < x1Size; i++) { // Get user input for each coordinate
 			columnSum += matrix[i][i2];
 		}
-		columnSums.push_back(columnSum);
 		cout << "\nSum for column " << i << " :" << columnSum;
 	}
-
-	return columnSums; // Return column sums instead of only printing them
 }
 
 void print2DIntArray(int[3][4], size_t x1Size, size_t x2Size) {
@@ -57,6 +49,6 @@ int main() {
 	
 	read2DIntArray(matrix, ROWS, COLUMNS); // Read array
 	print2DIntArray(matrix, ROWS, COLUMNS);
-	vector<int> rowSums = get2DArrayRowSums(matrix, ROWS, COLUMNS);
-	vector<int> columnSums = get2DArrayColumnSums(matrix, ROWS, COLUMNS);
+	print2DArrayRowSums(matrix, ROWS, COLUMNS);
+	print2DArrayColumnSums(matrix, ROWS, COLUMNS);
 }
