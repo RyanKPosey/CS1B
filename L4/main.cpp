@@ -28,7 +28,7 @@ void print2DArrayColumnSums(int matrix[3][4], size_t x1Size, size_t x2Size) {
 	for(int i = 0; i < x2Size; i++) { // Columns
 		int columnSum = 0;
 		for (int i2 = 0; i2 < x1Size; i2++) {
-			columnSum += matrix[i][i2]; // Add to column sum
+            columnSum += matrix[i2][i]; // Add to column sum
 		}
 		cout << "\nSum for column " << i << " :" << columnSum;
 	}
