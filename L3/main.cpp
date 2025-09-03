@@ -11,8 +11,7 @@
 
 using std::string, std::cout, std::cin, std::vector, std::endl, std::vector;
 
-double getAverage(vector<T> vector) {
-/* I could use double here instead of T, but the arg could still be an int or float vector */ 
+double getAverage(vector<double> vector) {
 	double vectorTotal = 0;
 
 	for(int i = 0; i < vector.size(); i++) {
