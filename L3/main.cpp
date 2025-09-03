@@ -9,7 +9,7 @@
 #include <iostream>
 #include <vector>
 
-using std::string, std::cout, std::cin, std::vector;
+using std::string, std::cout, std::cin, std::vector, std::endl;
 
 double getAverage(vector<T> vector) {
 /* I could use double here instead of T, but the arg could still be an int or float vector */ 
@@ -58,7 +58,7 @@ int main() {
 
 	double averageGPA = getAverage(gpas); // Get Average GPA
 	
-	cout << "\nid\tname\tgpa\n"
+	cout << "\nid\tname\tgpa\n";
 	for(int i = 0; i < ids.size; i++) { // Print corresponding values
 		cout << ids.at(i) << "\t" << names.at(i) << "\t" << gpas.at(i) << "\t" << endl;
 	}
