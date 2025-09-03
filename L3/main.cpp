@@ -9,7 +9,7 @@
 #include <iostream>
 #include <vector>
 
-using std::string, std::cout, std::cin, std::vector, std::endl;
+using std::string, std::cout, std::cin, std::vector, std::endl, std::vector;
 
 double getAverage(vector<T> vector) {
 /* I could use double here instead of T, but the arg could still be an int or float vector */ 
