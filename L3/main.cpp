@@ -58,7 +58,7 @@ int main() {
 	double averageGPA = getAverage(gpas); // Get Average GPA
 	
 	cout << "\nid\tname\tgpa\n";
-	for(int i = 0; i < ids.size; i++) { // Print corresponding values
+	for(int i = 0; i < ids.size(); i++) { // Print corresponding values
 		cout << ids.at(i) << "\t" << names.at(i) << "\t" << gpas.at(i) << "\t" << endl;
 	}
 
