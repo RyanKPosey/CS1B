@@ -21,6 +21,7 @@ void print2DArrayRowSums(int matrix[3][4], size_t x1Size, size_t x2Size) {
 		
 		cout << "\nSum for row " << i+1 << " :" << rowSum;
 	}
+    cout << endl;
 }
 
 void print2DArrayColumnSums(int matrix[3][4], size_t x1Size, size_t x2Size) {
@@ -31,6 +32,7 @@ void print2DArrayColumnSums(int matrix[3][4], size_t x1Size, size_t x2Size) {
 		}
 		cout << "\nSum for column " << i << " :" << columnSum;
 	}
+    cout << endl;
 }
 
 void print2DIntArray(int matrix[3][4], size_t x1Size, size_t x2Size) {
