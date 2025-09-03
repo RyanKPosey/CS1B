@@ -33,7 +33,7 @@ void print2DArrayColumnSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	}
 }
 
-void print2DIntArray(int[3][4], size_t x1Size, size_t x2Size) {
+void print2DIntArray(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	for(int i = 0; i <= x1Size; i++) { // Rows
 		for (int i2 = 0; i2 < x2Size; i++) { // Columns
 			cout << matrix[i][i2] << "\t";
