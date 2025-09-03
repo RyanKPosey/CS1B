@@ -48,17 +48,17 @@ int main() {
 		int id = 0;
 		cout << "\nEnter id: ";
 		cin >> id;
-		ids.push_back(id);
+		ids.push_back(id); // Add value to ids
 	
 		string name = "";
 		cout << "\nEnter name: ";
 		cin >> name;
-		names.push_back(name);
+		names.push_back(name); // Add value to names
 	
 		double gpa = 0;
 		cout << "\nEnter gpa: ";
 		cin >> gpa;
-		gpas.push_back(gpa);
+		gpas.push_back(gpa); // Add value to gpas
 	}
 
 	double averageGPA = getAverage(gpas); // Get Average GPA
