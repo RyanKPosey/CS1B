@@ -1,0 +1,50 @@
+/***************************/
+/* Minimum Stylesheet
+/* Programmer: Ryan Posey
+/* Assignment: L1
+/* Purpose: add function which takes and array and 
+/* 	modifies 3 reference variables, giving the minimum value, the maximum value 
+/* 	and the sum.
+/* Due Date: 8/27/2025
+/***************************/
+#include <iostream>
+using namespace std;
+
+void stats(const int a[], int n, int& mn, int& mx, long long& sum) { // Init function
+	mn = a[0], mx = a[0], sum = 0; // Set default values
+
+	for (int i = 0; i < n; i++) { // Iterate over each element of array
+		sum += a[i]; // Add value of element at current index to sum
+
+		if (a[i] < mn) {
+			mn = a[i]; // Set minimum to value at current index
+		}
+
+		if (a[i] > mx) {
+			mx = a[i]; // Set maximum to value at current index
+		}
+	}
+}
+
+int main() {
+	const int N = 5;
+	int a[N];
+	cout <<  "Enter 5 integers: ";
+	for (int i = 0; i < N; i++) { // Read each element of array
+		cin >> a[i];
+	}
+
+	int mn = 0;
+	int mx = 0;
+	long long sum = 0;
+	int avg = 0;
+
+	stats(a, N, mn, mx, sum);
+
+	avg = sum/N;
+	
+	cout << "\nMinimum:\t" << mn;
+	cout << "\nMaximum:\t" << mx;
+	cout << "\nSum:\t" << sum;
+	cout << "\nAverage:\t" << avg;
+}
