@@ -45,14 +45,20 @@ int main() {
 	*/
 
 	for(int i = 0; i < USER_COUNT; i++) { // Read values for vectors
+		int id = 0;
 		cout << "\nEnter id: ";
-		cin >> ids.at(i);
+		cin >> id;
+		ids.push_back(id);
 	
+		string name = "";
 		cout << "\nEnter name: ";
-		cin >> names.at(i);
+		cin >> name;
+		names.push_back(name);
 	
+		double gpa = 0;
 		cout << "\nEnter gpa: ";
-		cin >> gpas.at(i);
+		cin >> gpa;
+		gpas.push_back(gpa);
 	}
 
 	double averageGPA = getAverage(gpas); // Get Average GPA
