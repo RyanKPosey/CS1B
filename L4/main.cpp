@@ -12,7 +12,7 @@ void read2DIntArray(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	}
 }
 
-vector<int> get2DArrayRowSums(int[3][4] matrix. size_t x1Size, size_t x2Size) {
+vector<int> get2DArrayRowSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	vector<int> rowSums = {};
 	for(int i = 0; i < x1Size; i++) { // Rows
 		int rowSum = 0;
@@ -27,7 +27,7 @@ vector<int> get2DArrayRowSums(int[3][4] matrix. size_t x1Size, size_t x2Size) {
 	return rowSums; // Return row sums instead of only printing them
 }
 
-vector<int> get2DArrayColumnSums(int[3][4] matrix. size_t x1Size, size_t x2Size) {
+vector<int> get2DArrayColumnSums(int[3][4] matrix, size_t x1Size, size_t x2Size) {
 	vector<int> columnSums = {};
 	for(int i = 0; i <= x2Size; i++) { // Columns
 		int columnSum = 0;
